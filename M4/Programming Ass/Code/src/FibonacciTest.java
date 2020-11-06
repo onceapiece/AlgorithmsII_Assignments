@@ -8,7 +8,8 @@ class FibonacciTest {
     }
 
     @org.junit.jupiter.api.Test
-    void improvedRecursive() {
+    void improvedRecursiveTest() {
+        Fibonacci.improvedRecursive(6);
     }
 
     @org.junit.jupiter.api.Test
