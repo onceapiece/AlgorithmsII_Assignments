@@ -54,7 +54,7 @@ public class Fibonacci {
         pw0b.flush();
         StringBuilder sb = new StringBuilder();
 
-        for (int i = 1; i <= 55; i++) {
+        for (int i = 0; i <= 55; i++) {
             long starTime = System.nanoTime();
             naiveRecursive(i);
             long endTime = System.nanoTime();
@@ -72,7 +72,7 @@ public class Fibonacci {
         pw0b.flush();
         StringBuilder sb = new StringBuilder();
 
-        for (int i = 1; i <= 55; i++) {
+        for (int i = 0; i <= 55; i++) {
             long starTime = System.nanoTime();
             improvedRecursive(i);
             long endTime = System.nanoTime();
@@ -89,7 +89,7 @@ public class Fibonacci {
         pw0b.flush();
         StringBuilder sb = new StringBuilder();
 
-        for (int i = 1; i <= 55; i++) {
+        for (int i = 0; i <= 55; i++) {
             long starTime = System.nanoTime();
             iterativeBottomUp(i);
             long endTime = System.nanoTime();
