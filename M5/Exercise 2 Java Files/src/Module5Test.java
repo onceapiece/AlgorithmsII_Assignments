@@ -10,13 +10,6 @@ public class Module5Test {
             double q = Double.NEGATIVE_INFINITY;
             for (int i = 1; i <= j; i++) {
                 if (i < j) {
-                    /**
-                     * This first IF statement performs and compares all possible cuts,
-                     *     then stores their value in r[j] with the cost C deducted.
-                     *
-                     * The second IF statement checks to see if a cut minus the cost has
-                     *      a higher value than the value with no cuts.
-                     */
                     if (q < p[i] + results[j - i] - c) {
                         size[j - 1] = i;
                         q = p[i] + results[j - i] - c;
@@ -36,6 +29,6 @@ public class Module5Test {
 
 
     public static void main(String[] args) {
-        System.out.println(Extended_Bottom_Up_Cut_Rod_With_Cost(prices, 6, 2));
+        System.out.println(Extended_Bottom_Up_Cut_Rod_With_Cost(prices, 10, 1));
     }
 }

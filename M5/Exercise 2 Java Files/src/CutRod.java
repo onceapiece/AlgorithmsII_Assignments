@@ -66,7 +66,7 @@ public class CutRod {
 
 
     public static void main(String[] args) {
-        System.out.println(Extended_Bottom_Up_Cut_Rod_With_Cost(prices, 5, 2));
+        System.out.println(Extended_Bottom_Up_Cut_Rod_With_Cost(prices, 10, 1));
 
     }
 }
