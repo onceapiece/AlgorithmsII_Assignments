@@ -3,28 +3,6 @@
 public class MemoizedCutRod {
 
 
-//   public int MemoizedCutRod(int[] p, int n) {
-//      int[] r = new int[n+1];
-//      for (int i = 0; i <= n ; i++) {
-//         r[i] = -1;
-//      }
-//      return MemoizedCutRodAux(p, n, r);
-//   }
-//
-//   public int MemoizedCutRodAux(int[] p, int n, int[] r) {
-//      int q = -1;
-//      if (r[n] >= 0) {
-//         return r[n];
-//      }
-//      if (n==0) {
-//         q = 0;
-//      }
-//      for (int i = 1; i <= n ; i++) {
-//         q = Math.max(q, p[i] + MemoizedCutRodAux(p, n-i, r));
-//      }
-//      r[n] = q;
-//      return q;
-//   }
 
    public static int[][] MemoizedCutRodSolution(int[] prices, int n) {
       int[] results = new int[n+1];
@@ -75,8 +53,16 @@ public class MemoizedCutRod {
    }
 
    public static void main(String[] args) {
+      int n = -1; 
+      try{
+         n = Integer.parseInt(args[0]);
+      } catch (Exception e) {
+         e.printStackTrace();
+         System.out.println("Command Line argument must be an integer between 1 and 10.");
+         return; 
+      }
       int[] prices = {0,1,5,8,9,10,17,17,20,24,30};
-      PrintCutRodSolution(7, prices);
+      PrintCutRodSolution(n, prices);
    }
 
 
